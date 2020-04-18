@@ -1,13 +1,260 @@
-*{
-    margin: 0;
-    padding: 0;
+
+main {
+    display: flex;
+    flex: 5;
+
+    background: #F2F2F2;
+
+    padding: 17px 15px 115px 30px;
+    box-sizing: border-box;
 }
 
-body{
-    /*background: darkgrey;*/
-    font-family: 'Roboto', sans-serif;
+
+.text {
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    color: #4A4A4A;
 }
 
-.link {
-    text-decoration: none;
+.text_bigger {
+    font-size: 16px;
+}
+.text_smaller {
+    font-size: 12px;
+}
+.text_bold {
+    font-weight: bold;
+}
+.checkbox {
+    border: 1px solid #4A4A4A;
+    border-radius: 1px;
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+.main_container {
+    width: 100%;
+}
+
+.main_inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main_inputs > form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main_inputs > form > textarea {
+    width: 500px;
+    height: 185px;
+    box-sizing: border-box;
+    padding:10px 15px 0 15px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+    border-radius: 5px;
+    resize: none;
+}
+
+.main_inputs > form > textarea:last-child {
+    margin-left: 30px;
+}
+
+.prep_text {
+    margin-top: 20px;
+}
+
+.main_prep {
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding: 25px 25px 15px 20px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.main_wrapper {
+    width: 100%;
+
+    display: flex;
+
+}
+
+.left_col {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left_col > div:first-child {
+    height: 240px;
+
+    display: flex;
+
+
+}
+
+.left_col > div:last-child {
+    height: 200px;
+
+    display: flex;
+
+}
+
+.short_main {
+    background: url("img/rectangle_main.png");
+
+    width: 195px;
+    height: 240px;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+    padding: 8px 8px 0 8px;
+}
+
+.long_main {
+    margin-left: 15px;
+    box-sizing: border-box;
+    padding: 15px 10px 5px 10px;
+    border-radius: 8px;
+
+    background: url("img/rectangle_long.png");
+    width: 659px;
+    height: 240px;
+}
+
+
+.long_main > div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 15px;
+}
+
+.long_main > div:nth-child(3) > div {
+    background: url("img/rectangle_small.png");
+    width: 98px;
+    height: 158px;
+
+    box-sizing: border-box;
+    padding: 85px 85px 55px 5px;
+
+}
+
+.long_main > div:nth-child(3) > div > span {
+    opacity: 0.5;
+
+}
+
+
+.long_main > div:last-child {
+    border: 1px dashed #4A4A4A;
+    opacity: 0.24;
+
+    margin-top: 10px;
+}
+
+.bottom_long_main {
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding: 10px 45px 25px 10px;
+
+    background: url("img/rect_long_bot.png");
+    width: 870px;
+    height: 197px;
+}
+
+
+.flex_wrapper {
+    margin-top: 21px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.flex_wrapper > div:first-child > form {
+    margin-top: 20px;
+    display: flex;
+}
+
+.flex_wrapper > div:first-child > form > div {
+    margin-left: 5px;
+}
+
+.flex_wrapper > div:first-child > div:last-child {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.flex_wrapper > div:first-child > div:last-child > div:last-child {
+    margin-top: 5px;
+}
+
+.flex_wrapper > div:nth-child(2) {
+
+}
+
+.flex_wrapper > div:nth-child(2) > div:last-child {
+    width: 215px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.flex_wrapper > div:nth-child(2) > div:last-child > form  {
+    margin-top: 10px;
+}
+
+.flex_wrapper > div:nth-child(2) > div:last-child > form > div {
+    display: flex;
+}
+
+.flex_wrapper > div:nth-child(2) > div:last-child > form > div > div {
+    margin-left: 5px;
+}
+
+.flex_wrapper > div:nth-child(2) > div:last-child > form > div:last-child{
+    margin-top: 10px;
+}
+
+.flex_wrapper > div:last-child > form  {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex_wrapper > div:last-child > form > div {
+    width: 195px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_wrapper > div:last-child > form > div > div {
+    width: 180px;
+}
+
+/*Right column*/
+
+.right_col {
+    background: url("img/rect_long_right.png");
+    width: 195px;
+    height: 440px;
+
+    margin-left: 15px;
+    box-sizing: border-box;
+    padding: 10px 10px 0 10px;
+}
+
+.right_col > div:last-child {
+    margin-top: 10px;
 }
