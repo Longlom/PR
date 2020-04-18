@@ -48,7 +48,6 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-
 }
 
 .main_inputs > form > textarea {
@@ -162,7 +161,6 @@ main {
 }
 
 .bottom_long_main {
-    outline: 1px solid azure;
     margin-top: 15px;
     box-sizing: border-box;
     padding: 10px 45px 25px 10px;
@@ -216,7 +214,6 @@ main {
 }
 
 .flex_wrapper > div:nth-child(2) > div:last-child > form > div {
-    /*outline: 1px solid mediumspringgreen;*/
     display: flex;
 }
 
