@@ -2,111 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="aside.css">
-    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Title</title>
 </head>
 <body>
-    <div class="flex_container">
-        <aside>
-            <div class="aside_container">
-                <div class="aside_header">Usability test plan Dashboard</div>
-                <div class="aside_flex">
-                    <div class="wrapper">
-                        <div class="aside_text">The sercive/product that is going to be tested</div>
-                        <div class="aside_image"><img src="img/Rectangle_aside.png" alt="rectangle"></div>
-                    </div>
-                    <div class="wrapper">
-                        <div class="aside_text">Business requirements</div>
-                        <div class="aside_image"><img src="img/Rectangle_aside.png" alt="rectangle"></div>
-                    </div>
-                    <div class="wrapper">
-                        <div class="aside_text">User requirements</div>
-                        <div class="aside_image"><img src="img/Rectangle_aside.png" alt="rectangle"></div>
-                    </div>
-                    <div class="wrapper">
-                        <div class="aside_text">Location & dates of the tests</div>
-                        <div class="aside_image"><img src="img/Rectangle_aside.png" alt="rectangle"></div>
-                    </div>
+    <div class="flex__wrapper">
+        <div class="container">
+            <div>
+                <input type="checkbox" id="first__checkbox"><label for="first__checkbox">Хочу интересную и приятную судьбу</label>
+                <div>
+                    <h3>Не все люди</h3>
+                    <p>Вовсе не все люди в состоянии построить сами свою судьбу так, как им хочется. Это было бы слишком просто, если бы все нажимали кнопку: «<a href="#">Хочу интересную и приятную судьбу</a>» и получали бы ее, сахарным сиропом политую.</p>
+                    <p>Не у всех одинаковые стартовые данные, ни у всех были хорошие семьи, не все верят в себя, идут напролом. Если одним победа дается, хоть и с трудом, то других она просто обходит стороной. Просто у всех разная судьба. Но в любом случае каждый должен до последнего быть на плаву. Ради себя, прежде всего!</p>
+                    <p>Все зависит от отношения к ситуации: кто-то скажет, что ему вообще не везет, все рушится и поставит на себе крест, а другой поймет, что, значит, не туда идет, что есть другие дороги и надо наслаждаться тем, что есть, пробовать, не бояться, да, поныть иногда, но утром проснуться и шагать дальше.</p>
                 </div>
             </div>
-
-        </aside>
-        <main>
-            <div class="main_container">
-                <div class="main_inputs">
-                    <div class="text text_bigger">Test Objectives</div>
-                    <form action="">
-                        <textarea class="text" placeholder="Why are you doing this user testing? What are the benefits Any risks of not achieving this test?"></textarea>
-                        <textarea class="text" placeholder="What are the goals of the usabilty test? What are the specific questions that will be answered? What hypothesis that will be tested?"></textarea>
-                    </form>
-                </div>
-                <div class="prep_text text text_bigger">Test Preparation</div>
-                <div class="main_prep">
-                    <div class="main_wrapper">
-                        <div class="left_col">
-                            <div>
-                                <div class="short_main text">Teams who are involved and what are their responsibilities?</div>
-                                <div class="long_main">
-                                    <div class="text">Test plan / procedure</div>
-                                    <div class="text opacity">List the main steps of the test procedure</div>
-                                    <div>
-                                        <div class="text"><span>1</span></div>
-                                        <div class="text"><span>2</span></div>
-                                        <div class="text"><span>3</span></div>
-                                        <div class="text"><span>4</span></div>
-                                        <div class="text"><span>5</span></div>
-                                        <div class="text"><span>6</span></div>
-                                    </div>
-                                    <div ></div>
-                                </div>
-                            </div>
-                            <div class="bottom_long_main">
-                                <div class="flex_wrapper">
-                                    <div>
-                                        <div class="text">Review before the test (check if done)</div>
-                                        <form><input type="checkbox"><div class="text">Email Participants</div></form>
-                                        <div>
-                                            <div class="text text_smaller">If checked, write the date that was sent</div>
-                                            <div class="text text_smaller text_bold">Date:</div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="text">Reminder participants about the tests </div>
-                                        <div>
-                                            <div class="text text_smaller">
-                                                Write the number and dates of the reminders
-                                                If  reminder was done, please check the box
-                                            </div>
-                                            <form>
-                                                <div class="text text_bold"><input type="checkbox"><div>Reminder #1  -  Date:</div></div>
-                                                <div class="text text_bold"><input type="checkbox"><div>Reminder #2  -  Date:</div></div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <form>
-                                            <div class="text"><input type="checkbox" class="checkbox"><div>Ethical Approval prepared and sent</div></div>
-                                            <div class="text"><input type="checkbox" class="checkbox"><div>Recording consent form prepared for the test session</div></div>
-                                            <div class="text"><input type="checkbox" class="checkbox"><div>Usability testing checklist prepared for the test session</div></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right_col">
-                            <div class="text">Test Tasks</div>
-                            <div class="text opacity">List the test tasks</div>
-                        </div>
-                    </div>
+            <div>
+                <input type="checkbox" id="second__checkbox"><label for="second__checkbox"> Чего бы это ни стоило</label>
+                <div>
+                    <h3>Правил не существует</h3>
+                    <p>Чего бы это ни стоило – никогда не поздно, никогда не рано стать тем, кем ты хочешь стать. <a href="#">Временных рамок нет</a>, можешь начать когда угодно. Можешь измениться или остаться прежним – правил не существует.</p>
+                    <img src="./img/book.png" alt="Запрет на себя" />
                 </div>
             </div>
-        </main>
-
+            <div>
+                <input type="checkbox" id="third__checkbox"><label for="third__checkbox"> Место в жизни</label>
+              <div>
+                    <h3>Место в жизни</h3>
+                    <p>Любишь жизнь и одновременно понимаешь, что найти свое истинное место в ней – самая сложная задача бытия. «<a href="#">Место в жизни</a>» – это не любовь или карьера. Это нечто большее, внутреннее, очень свое. Это когда смотришь на небо и понимаешь, что под одним из облаков твое место, пусть маленькое, но твое…</p>
+              </div>
+            </div>
+        </div>
     </div>
-
-
 </body>
 </html>
