@@ -2,167 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="nav_style.css">
-    <link rel="stylesheet" href="banner_1.css">
-    <link rel="stylesheet" href="banner_2.css">
-    <link rel="stylesheet" href="footer.css">
-
+    <link rel="stylesheet" href="style.css">
     <title>Title</title>
 </head>
 <body>
-    <div class="container">
-        <div class="nav">
-            <div class="logo"><img src="img/logo.png" alt="b-logo"></div>
-        <div class="nav_list">
-            <a href="#" class="nav_link link">Headphones</a>
-            <a href="#" class="nav_link link">Earphones</a>
-            <a href="#" class="nav_link link">Speakers</a>
-            <a href="#" class="nav_link link">Explore</a>
-        </div>
-        <div class="button_group">
-            <a href="#" class="nav_icon link">
-                <img src="img/find.png" alt="loupe">
-            </a>
-            <a href="#" class="nav_icon link">
-                <img src="img/customer.png" alt="customer_icon">
-            </a>
-            <a href="#" class="nav_icon link">
-                <img src="img/cart.png" alt="cart_icon">
-            </a>
-        </div>
+    <div class="flex__wrapper">
+        <div class="container">
+            <div>
+                <input type="checkbox" id="first__checkbox"><label for="first__checkbox">Хочу интересную и приятную судьбу</label>
+                <div>
+                    <h3>Не все люди</h3>
+                    <p>Вовсе не все люди в состоянии построить сами свою судьбу так, как им хочется. Это было бы слишком просто, если бы все нажимали кнопку: «<a href="#">Хочу интересную и приятную судьбу</a>» и получали бы ее, сахарным сиропом политую.</p>
+                    <p>Не у всех одинаковые стартовые данные, ни у всех были хорошие семьи, не все верят в себя, идут напролом. Если одним победа дается, хоть и с трудом, то других она просто обходит стороной. Просто у всех разная судьба. Но в любом случае каждый должен до последнего быть на плаву. Ради себя, прежде всего!</p>
+                    <p>Все зависит от отношения к ситуации: кто-то скажет, что ему вообще не везет, все рушится и поставит на себе крест, а другой поймет, что, значит, не туда идет, что есть другие дороги и надо наслаждаться тем, что есть, пробовать, не бояться, да, поныть иногда, но утром проснуться и шагать дальше.</p>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" id="second__checkbox"><label for="second__checkbox"> Чего бы это ни стоило</label>
+                <div>
+                    <h3>Правил не существует</h3>
+                    <p>Чего бы это ни стоило – никогда не поздно, никогда не рано стать тем, кем ты хочешь стать. <a href="#">Временных рамок нет</a>, можешь начать когда угодно. Можешь измениться или остаться прежним – правил не существует.</p>
+                    <img src="./img/book.png" alt="Запрет на себя" />
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" id="third__checkbox"><label for="third__checkbox"> Место в жизни</label>
+              <div>
+                    <h3>Место в жизни</h3>
+                    <p>Любишь жизнь и одновременно понимаешь, что найти свое истинное место в ней – самая сложная задача бытия. «<a href="#">Место в жизни</a>» – это не любовь или карьера. Это нечто большее, внутреннее, очень свое. Это когда смотришь на небо и понимаешь, что под одним из облаков твое место, пусть маленькое, но твое…</p>
+              </div>
+            </div>
         </div>
     </div>
-
-    <div class="banner_1">
-        <div class="wrapper">
-            <div class="banner_1_picture">
-                <img src="img/bigHeadphones.png" alt="bigHeadphones">
-            </div>
-
-            <div class="info">
-                <div class="sup_title">Beats Studio3 Wireless</div>
-                <div class="title">Experience your music like never before.</div>
-                <div class="info_group">
-                    <div class="price">$299.95</div>
-                    <button class="button">BUY NOW</button>
-                </div>
-                <div class="sub_title">$60 Apple Music gift card with purchase of select Beats products.*</div>
-            </div>
-    </div>
-    </div>
-
-    <div class="banner_2">
-        <div class="wrapper_2">
-            <div class="info_2">
-                <div class="sup_title_2">Portable Wireless Speaker</div>
-                <div class="head_title">Beats Pill <img src="img/plus.png" alt="plus_image"> </div>
-                <div class="title_2">Available Colors</div>
-                <div class="sup_color">Find your Color</div>
-                <div class="colors">
-                    <img src="img/white_oval.png" alt="white circle">
-                    <img src="img/red_oval.png" alt="red circle">
-                    <img src="img/black_oval.png" alt="black circle">
-                </div>
-                <div class="info_group_2">
-                    <div class="price_2">$299.95</div>
-                    <button class="button_2">BUY NOW</button>
-                </div>
-                <div class="sub_title_2">$60 Apple Music gift card with purchase of select Beats products.*</div>
-            </div>
-            <div class="banner_2_picture"><img src="img/MusStation.png" alt="music station white"></div>
-        </div>
-
-        <div class="wrapper_3">
-            <div class="product">
-                <img src="img/EPpink.png" alt="earpods pink">
-                <div class="product_info">
-                    <div class="product_head">Beatsˣ</div>
-                    <div class="product_text">Up to 8 hours of battery life <br>
-                        With Fast Fuel, a 5-minute charge = 2 hours of playback</div>
-                    <div class="product_group">
-                        <div class="product_price">$999.95</div>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="img/EPgreen.png" alt="earpods green">
-                <div class="product_info">
-                    <div class="product_head">Beatsˣ</div>
-                    <div class="product_text">Up to 8 hours of battery life <br>
-                        With Fast Fuel, a 5-minute charge = 2 hours of playback</div>
-                    <div class="product_group">
-                        <div class="product_price">$99.95</div>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="img/EPblack.png" alt="earpods black">
-                <div class="product_info">
-                    <div class="product_head"></div>
-                    <div class="product_text">Up to 8 hours of battery life <br>
-                        With Fast Fuel, a 5-minute charge = 2 hours of playback</div>
-                    <div class="product_group">
-                        <div class="product_price">$299.95</div>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <footer>
-        <div class="footer_container">
-            <div class="footer_logo"><img src="img/logo.png" alt=""></div>
-            <div class="footer_content">
-                <ul>
-                    <li>Products</li>
-                    <li><a href="#" class="link">Headphones</a></li>
-                    <li><a href="#" class="link">Earphones</a></li>
-                    <li><a href="#" class="link">Speakers</a></li>
-                    <li><a href="#" class="link">Accessories</a></li>
-                    <li><a href="#" class="link">Collaborations</a></li>
-                    <li><a href="#" class="link">Beatsaudio</a></li>
-                    <li><a href="#" class="link">Special offers</a></li>
-                </ul>
-            </div>
-            <div class="footer_content">
-                <ul>
-                    <li>Support</li>
-                    <li><a href="#" class="link">Product help</a></li>
-                    <li><a href="#" class="link">Service & warranty</a></li>
-                    <li><a href="#" class="link">Register your beats</a></li>
-                    <li><a href="#" class="link">Update your beats</a></li>
-                    <li><a href="#" class="link">Authorized service providers</a></li>
-                    <li><a href="#" class="link">Contact support</a></li>
-                    <li><a href="#" class="link">International numbers</a></li>
-                </ul>
-            </div>
-            <div class="footer_content">
-                <ul>
-                    <li>Company</li>
-                    <li><a href="#" class="link">Product help</a></li>
-                    <li><a href="#" class="link">News and events</a></li>
-                    <li><a href="#" class="link">Promotion terms</a></li>
-                    <li><a href="#" class="link">Privacy policy</a></li>
-                    <li><a href="#" class="link">Trademark</a></li>
-                    <li><a href="#" class="link">Terms of use</a></li>
-                    <li><a href="#"  class="link">Cookies</a></li>
-                </ul>
-            </div>
-            <div class="footer_follow">
-                <ul>
-                    <li>Follow Us</li>
-                    <li><img src="img/soc_nets.png" alt=""></li>
-                </ul>
-            </div>
-        </div>
-        <div class="rights">Copyright © 2020 Apple Inc. - All rights reserved.</div>
-    </footer>
-
 </body>
 </html>
