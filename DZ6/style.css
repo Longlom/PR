@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex__wrapper {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /*outline: 1px solid green;*/
+}
+
+.container {
+    max-width: 640px;
+    width: 100%;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+
+
+.container > div {
+    position: relative;
+}
+
+.container > div > input {
+    display: none;
+}
+
+/*First Tab*/
+
+.container > div > label::before {
+    content: "";
+    left: -10px;
+    top: 10px;
+    position: absolute;
+    height: 25px;
+    border-left: 2px solid #0179FF;
+}
+
+.container > div > label {
+    display: block;
+    height: 50px;
+    width: 100%;
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 15px 0 15px 35px;
+
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+}
+
+
+
+.container > div > label::after {
+    content: "";
+
+    position: absolute;
+    top: 20px;
+    left: 5px;
+
+    border: 10px solid transparent;
+    border-bottom: 0;
+    border-top-color: #5D5D5D;
+    width: 0;
+    height: 0;
+}
+
+.container > div:first-child > div::before {
+    content: "";
+    left: -9px;
+    top: -15px;
+    position: absolute;
+    height: 105%;
+    border-left: 2px solid #0179FF;
+}
+
+.container > div > div {
+    position: relative;
+    display: none;
+
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.container > div > div > h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #5D5D5D;
+}
+
+.container > div > div > p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #5D5D5D;
+    margin-top: 15px;
+
+}
+
+/*Second Tab*/
+
+.container > div:nth-child(2) > div {
+    position: relative;
+}
+
+.container > div:nth-child(2) > div > img {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 510px;
+}
+
+.container > div:nth-child(2) > div::before {
+    content: "";
+    left: -9px;
+    top: -15px;
+    position: absolute;
+    height: 102%;
+    border-left: 2px solid #0179FF;
+}
+
+/*Third Tab*/
+
+.container > div:last-child > div::before {
+    content: "";
+    left: -9px;
+    top: -15px;
+    position: absolute;
+    height: 110%;
+    border-left: 2px solid #0179FF;
+}
+
+#first__checkbox:checked + label + div {
+    display: block;
+}
+
+#second__checkbox:checked + label + div {
+    display: block;
+}
+
+#third__checkbox:checked + label + div {
+    display: block;
+}
+
+
+#first__checkbox:checked + label::after {
+    content: "";
+
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 0;
+    height: 0;
+
+    border: 10px solid transparent;
+    border-top: 0;
+    border-bottom-color: #5D5D5D;
+}
+
