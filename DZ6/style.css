@@ -61,13 +61,16 @@
 
 .container > div > label::after {
     content: "";
-    background: url("img/Point.png");
+
     position: absolute;
     top: 20px;
-    left: 15px;
+    left: 5px;
 
-    width: 10px;
-    height: 6px;
+    border: 10px solid transparent;
+    border-bottom: 0;
+    border-top-color: #5D5D5D;
+    width: 0;
+    height: 0;
 }
 
 .container > div:first-child > div::before {
@@ -84,7 +87,7 @@
     display: none;
 
     box-sizing: border-box;
-    padding: 20px 5px 20px 20px;
+    padding: 20px;
 }
 
 .container > div > div > h3 {
@@ -149,4 +152,17 @@
 }
 
 
+#first__checkbox:checked + label::after {
+    content: "";
+
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 0;
+    height: 0;
+
+    border: 10px solid transparent;
+    border-top: 0;
+    border-bottom-color: #5D5D5D;
+}
 
