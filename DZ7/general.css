@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.link {
+    text-decoration: none;
+
+    color: #9F9F9F;
+}
+

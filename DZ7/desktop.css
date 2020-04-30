@@ -1,0 +1,152 @@
+@media (min-width: 1200px) {
+
+
+    header {
+        height: 80px;
+    }
+
+    .header__menu > label {
+        background-image: url("img/header_logo.png");
+    }
+
+    .header__menu {
+        display: block;
+        position: relative;
+    }
+
+    .header__menu > .menu__list {
+        display: flex;
+        position: relative;
+
+        margin-left: 50px;
+    }
+
+    .header__input {
+        margin-left: 50px;
+    }
+
+    /*Main*/
+
+    .main {
+        padding: 160px;
+    }
+
+    .main > .container {
+        width: 1500px;
+    }
+
+    .main__header {
+        width: 500px;
+        height: 300px;
+
+        font-size: 90px;
+        line-height: 100px;
+    }
+
+    .main__button__wrapper {
+        margin: 30px 0 80px 0;
+    }
+
+    .main__button > a img {
+        width: 50px;
+        height: 50px;
+    }
+    .main__button:first-child::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 20px;
+
+        border: 10px solid transparent;
+        border-left-color: white;
+        border-right: none;
+    }
+
+    .main__button:nth-of-type(2)::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        top: 5px;
+        left: 18px;
+
+        border: 6px solid transparent;
+        border-color: white;
+        border-bottom-color: transparent; !important;
+    }
+
+    .main__outer__wrapper {
+        display: flex;
+    }
+
+    .main__wrapper {
+        margin-top: 0;
+    }
+
+    .main__review {
+        height: 100px;
+        margin-top: 0;
+        margin-left: 80px;
+    }
+
+/*   Form */
+
+    .form {
+        height: 400px;
+        padding: 0;
+        padding-top: 60px;
+    }
+
+    .form > .form__wrapper > form {
+        width: 650px;
+        margin: 40px 0;
+
+        justify-content: space-between;
+
+    }
+
+    .form >.form__wrapper> form > .form__input__wrapper{
+        width: 300px;
+        height: 50px;
+
+    }
+
+    .form__input__wrapper >input {
+        width: 250px;
+
+    }
+
+    .form > .form__wrapper {
+        width: 980px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .form > .form__wrapper > button {
+        padding: 0;
+
+        width: 300px;
+        height: 50px;
+        margin: 0;
+    }
+
+    footer {
+        height: 70px;
+        width: 100vw;
+        padding: 20px 40px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer > div {
+        margin-top: 0;
+    }
+
+
+}
