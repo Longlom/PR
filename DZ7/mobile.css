@@ -1,20 +1,17 @@
 .background {
     position: relative;
 
-    background-image: url("img/Background_mobile.png");
+    background-image: url("img/Background_mobile.svg");
     background-size: cover;
     background-position: center;
-    width: 100vw;
+    width: 100%;
     height: 480px;
 }
 
 
 header {
     height: 60px;
-    width: 100vw;
-
-    position: fixed;
-    z-index: 10;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -50,7 +47,7 @@ header > label {
 .header__models {
     color: #ffffff;
     font-size: 15px;
-    border-bottom: 4px solid #ffffff;
+    border-bottom: 4px solid #fff;
 
     margin-left: 25px;
 
@@ -74,11 +71,11 @@ header > label {
 }
 
 
-.header__input > .header__input__wrapper >img {
+.header__input__wrapper > img {
     margin-left: 10px;
 }
 
-.header__input > .header__input__wrapper >input {
+.header__input__wrapper >input {
     outline: none;
     border: none;
     
@@ -89,10 +86,10 @@ header > label {
     width: 140px;
 
     background-color: transparent;
-    color: #ffffff;
+    color: #fff;
 }
 
-.header__input > .header__input__wrapper >input::placeholder {
+.header__input__wrapper >input::placeholder {
     color: white;
 }
 
@@ -101,12 +98,13 @@ header > label {
 
 .main {
     box-sizing: border-box;
-    padding-top: 80px;
+    padding-top: 20px;
     padding-left: 20px;
 
     position: relative;
     z-index: 5;
 }
+
 
 .main__header {
     width: 150px;
@@ -137,33 +135,14 @@ header > label {
 
 .main__button > a {
     display: flex;
+    color: #fff;
+
 }
 
-
-.main__button:nth-of-type(1)::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: 6px;
-    left: 8px;
-
-    border: 4px solid transparent;
-    border-left-color: white;
-    border-right: none;
+.main__button > a > img {
+    margin-right: 10px;
 }
 
-.main__button:nth-of-type(2)::before {
-    content: "";
-    position: absolute;
-    width: 1px;
-    top: 7px;
-    left: 6px;
-
-    border: 3px solid transparent;
-    border-color: white;
-    border-bottom-color: transparent; !important;
-}
 
 .main__button > a:nth-of-type(1){
     margin-right: 10px;
@@ -216,7 +195,7 @@ header > label {
 }
 
 .main__review_stars > label {
-    background-image: url("img/star_empry.png");
+    background-image: url("img/star_empty.svg");
     height: 16px;
     width: 15px;
 
@@ -224,26 +203,26 @@ header > label {
 }
 
 .main__review_stars > input:nth-of-type(5):checked + label:nth-of-type(5) {
-    background-image: url("img/star_filled.png");
+    background-image: url("img/star_filled.svg");
 }
 
 .main__review_stars > input:nth-of-type(4):checked ~ label {
-    background-image: url("img/star_filled.png");
+    background-image: url("img/star_filled.svg");
 }
 
 .main__review_stars > input:nth-of-type(3):checked ~ label {
-    background-image: url("img/star_filled.png");
+    background-image: url("img/star_filled.svg");
 }
 
 .main__review_stars > input:nth-of-type(2):checked ~ label {
-    background-image: url("img/star_filled.png");
+    background-image: url("img/star_filled.svg");
 }
 
 .main__review_stars > input:nth-of-type(1):checked ~ label {
-    background-image: url("img/star_filled.png");
+    background-image: url("img/star_filled.svg");
 }
 
-.main__review_stars> span {
+.main__review_stars > span {
     margin-left: 20px;
     margin-bottom: 5px;
     font-size: 17px;
@@ -254,7 +233,7 @@ header > label {
 
 .form {
     background: linear-gradient(0deg, rgba(9, 9, 9, 0.465718), rgba(9, 9, 9, 0.465718)), #1F1F2F;
-    width: 100vw;
+    width: 100%;
     height: 315px;
 
     box-sizing: border-box;
@@ -274,9 +253,14 @@ header > label {
     text-align: center;
 }
 
-.form > .form__wrapper > form {
+.form__wrapper > form {
     width: 280px;
+    height: 150px;
     margin: 15px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .form__input__wrapper {
@@ -307,7 +291,7 @@ header > label {
     border: none;
 }
 
-.form > .form__wrapper > button {
+.form__wrapper > form > button {
     color: white;
     font-size: 16px;
     text-transform: uppercase;
@@ -317,15 +301,17 @@ header > label {
     border: none;
     box-sizing: border-box;
     border-radius: 10px;
-    padding: 10px 25px;
+    padding: 10px 40px;
     display: block;
     margin: 20px auto;
     cursor: pointer;
 }
 
 
+/*Footer*/
+
 footer {
-    width: 100vw;
+    width: 100%;
     height: 205px;
 
     background: #404754;
