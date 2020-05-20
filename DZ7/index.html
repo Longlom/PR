@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="desktop.css">
+    <title>Adaptive landing</title>
+</head>
+<body>
+  <div class="background">
+    <header>
+        <input type="checkbox" id="menu" name="menu">
+        <label for="menu"></label>
+        <div class="header__models link">Models</div>
+        <nav class="header__menu">
+            <ul class="menu__list">
+                <li class="menu__list__item"><a href="#" class="link">Dimensions</a></li>
+                <li class="menu__list__item"><a href="#" class="link"> Facts & Figures</a></li>
+                <li class="menu__list__item"><a href="#" class="link">  History</a></li>
+                <li class="menu__list__item"><a href="#" class="link"> Reviews</a></li>
+            </ul>
+        </nav>
+        <div class="header__input">
+            <div class="header__input__wrapper">
+                <img src="img/Shape.png" alt="loupe">
+                <input type="search" placeholder="Search for details...">
+            </div>
+        </div>
+    </header>
+      <main class="main">
+          <div class="container">
+              <h1 class="main__header">Honda <span>Sport</span> CRF 450RX</h1>
+              <div class="main__button__wrapper">
+                  <div class="main__button"><a class="link" href="#"><img src="img/oval_filled.svg" alt="">Watch film</a></div>
+                  <div class="main__button"><a class="link" href="#"><img src="img/oval_empty.svg" alt="">Bookmark for later</a></div>
+              </div>
+              <div class="main__outer__wrapper">
+                  <div class="main__wrapper">
+                      <div class="main__info">Manufacturer <span>Honda</span></div>
+                      <div class="main__info">Production <span>2019</span></div>
+                      <div class="main__info">Engine <span>0.45 L PGM-FI</span></div>
+                  </div>
+                  <div class="main__review">
+                      Reviews
+                      <div class="main__review_stars">
+                          <span>4.0/5</span>
+                          <input type="radio" id ="radio__button1"  name="stars">
+                          <label for="radio__button1"></label>
+                          <input type="radio" id ="radio__button2" name="stars">
+                          <label for="radio__button2"></label>
+                          <input type="radio" id ="radio__button3" name="stars">
+                          <label for="radio__button3"></label>
+                          <input type="radio" id ="radio__button4" name="stars">
+                          <label for="radio__button4"></label>
+                          <input type="radio" id ="radio__button5" name="stars">
+                          <label for="radio__button5"></label>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </main>
+  </div>
+  <div class="form">
+      <div class="form__text">Sign up for our email newsletter and get the latest our company news.
+          Get free trial for 3 month.</div>
+      <div class="form__wrapper">
+          <form action="/posturl/newsletter/" method="POST" name="form" id="form">
+              <div class="form__input__wrapper"><img src="img/person_icon.png" alt=""><input type="text" placeholder="Name" value="Name" minlength="2" maxlength="30" pattern="\^[a-zA-Z]+$\" required></div>
+              <div class="form__input__wrapper"><img src="img/message_icon.png" alt=""><input type="email" placeholder="E-Mail" value="E-mail" required></div>
+              <button>Get started for free</button>
+          </form>
+      </div>
+  </div>
+<footer>
+    <ul>
+        <li><a href="#" >Cars</a></li>
+        <li><a href="#" >Motorcycles</a></li>
+        <li><a href="#" >Engines</a></li>
+        <li><a href="#" >Water moto technology</a></li>
+    </ul>
+    <div>&#169; 2020, &lt;BeeInterns /&gt;</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+@media (min-width: 768px) {
+    .background {
+        background-image: url("img/Background.png");
+        background-position: left;
+
+        height: 810px;
+    }
+
+    .header__menu {
+        margin-top: 10px;
+    }
+
+    .header__menu > label{
+        width: 40px;
+        height: 40px;
+    }
+
+    .header__models {
+        margin-left: 40px;
+
+        font-size: 18px;
+    }
+
+    .header__input {
+        margin-left: 45px;
+        width: 500px;
+    }
+    .header__input > .header__input__wrapper > img {
+        width: 20px;
+        height: 20px;
+        margin-left: 40px;
+    }
+    .header__input > .header__input__wrapper > input {
+        font-size: 14px;
+
+        margin-left: 25px;
+        width: 250px;
+    }
+
+/*    Main*/
+
+    .main {
+        padding-top: 80px;
+        padding-left: 100px;
+    }
+
+    .main__header {
+        font-size: 90px;
+        line-height: 100px;
+
+        width: 500px;
+        height: 300px;
+    }
+
+    .main__button__wrapper {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 450px;
+        margin-top: 30px;
+    }
+
+    .main__button {
+        font-size: 18px;
+
+        margin-top: 0;
+    }
+
+    .main__button > a {
+        color: white;
+
+        width: 250px;
+
+        align-items: center;
+    }
+
+    .main__button > a > img {
+        height: 40px;
+        width: 40px;
+        margin-right: 20px;
+    }
+
+    .main__button > a:last-child {
+        margin-left: 20px;
+    }
+
+    .main__button:nth-of-type(2) {
+        margin-left: 50px;
+    }
+
+    .main__wrapper {
+        flex-direction: row;
+
+        margin-top: 80px;
+        width: 540px ;
+        height: 100px;
+    }
+
+    .main__wrapper > .main__info {
+        font-size: 18px;
+        line-height: 30px;
+
+        width: 140px;
+        margin-right: 60px;
+    }
+
+    .main__wrapper > .main__info:nth-of-type(3) {
+        margin-right: 0;
+    }
+
+
+    .main__wrapper > .main__info > span{
+        font-size: 24px;
+
+        display: block;
+        margin-top: 10px;
+        white-space: nowrap;
+    }
+
+    .main__review {
+        font-size: 18px;
+    }
+
+    .main__review_stars {
+        margin-top: 20px;
+    }
+
+    .main__review_stars > label {
+        width:23px ;
+        height: 21px;
+        background-size: 23px 21px;
+        top: 10px
+    }
+
+    .main__review_stars > span {
+        font-size: 24px;
+    }
+
+/*   Form */
+
+    .form {
+        height: 425px;
+    }
+
+    .form > .form__text {
+        font-size: 25px;
+        line-height: 38px;
+        text-align: center;
+
+        margin: 0 auto;
+        width: 450px;
+        height: 115px;
+    }
+
+    .form > .form__wrapper >  form {
+        width: 450px;
+        height: 150px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px  auto;
+    }
+
+    .form >.form__wrapper> form > .form__input__wrapper {
+        width: 210px;
+        height: 50px;
+        margin-top: 0;
+    }
+
+    .form__input__wrapper >input {
+        width: 150px ;
+    }
+
+    .form__wrapper > form >button {
+        width: 450px;
+        height: 50px;
+    }
+
+    /*Footer*/
+
+    footer {
+        height: 130px;
+        padding: 30px ;
+
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+    }
+
+    footer > ul > li > a {
+        font-size: 20px;
+    }
+
+    footer > div {
+        font-size: 20px;
+    }
+}
