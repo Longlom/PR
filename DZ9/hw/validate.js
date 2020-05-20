@@ -13,8 +13,11 @@ function validate(data) {
         alert('Введите имя');
     } else if (login === 'beeline' || login === 'beeinterns' || login === 'bee') {
         alert('Логин занят');
-    }
-       else if (gender !== undefined) {
-        (gender === 'male') ?  alert(`Уважаемый ${firstName} заявка создана`) : alert(`Уважаемая ${firstName}, заявка создана`);
+    } else if (gender !== undefined) {
+           if (gender === 'male') {
+                alert(`Уважаемый ${firstName} заявка создана`)
+           } else {
+               alert(`Уважаемая ${firstName}, заявка создана`)
+           }
     }
 }
