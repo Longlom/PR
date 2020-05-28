@@ -33,7 +33,7 @@
     }
 
     .main > .container {
-        width: 1500px;
+        width: 1000px;
     }
 
     .main__header {
@@ -63,8 +63,12 @@
 
     .main__review {
         height: 100px;
-        margin-top: 0;
+        margin-top: 10px;
         margin-left: 100px;
+    }
+
+    .main__review_stars {
+        margin-top: 10px;
     }
 
 /*   Form */

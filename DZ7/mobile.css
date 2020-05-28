@@ -202,6 +202,10 @@ header > label {
     margin-left: 10px;
 }
 
+.main__review_stars > label:nth-of-type(5) {
+    margin-left: 0;
+}
+
 .main__review_stars > input:nth-of-type(5):checked + label:nth-of-type(5) {
     background-image: url("img/star_filled.svg");
 }
