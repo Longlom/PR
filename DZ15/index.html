@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        form > *:not(.checkbox) {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<form action="POST">
+    <label> Name:
+        <input type="text" name="name">
+    </label>
+    <label >Age:
+        <input type="text" name="age" >
+    </label>
+    <label >City:
+        <input type="text" name="city">
+    </label>
+    <label class="checkbox">
+        1 <input type="checkbox">
+    </label>
+    <label class="checkbox">
+        2 <input type="checkbox">
+    </label>
+    <label class="checkbox">
+        3 <input type="checkbox">
+    </label>
+    <label class="checkbox">
+        4 <input type="checkbox">
+    </label>
+    <button>Сохранить</button>
+</form>
+<script>
+    const inputName = document.body.querySelector('input[name = "name"]');
+    const inputAge = document.body.querySelector('input[name = "age"]');
+    const inputCity = document.body.querySelector('input[name = "city"]');
+    const checkboxArr = document.body.querySelectorAll('input[type = "checkbox"]');
+
+    function getCookie(name) {
+        let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    document.body.querySelector('button').addEventListener('click', function (event) {
+        event.preventDefault();
+        document.cookie = `name=${inputName.value};`;
+        document.cookie = `age=${inputAge.value};`;
+        document.cookie = `city=${inputCity.value};`;
+        document.cookie = `check__0=${checkboxArr[0].checked};`;
+        document.cookie = `check__1=${checkboxArr[1].checked};`;
+        document.cookie = `check__2=${checkboxArr[2].checked};`;
+        document.cookie = `check__3=${checkboxArr[3].checked};`;
+    });
+
+
+
+    document.addEventListener('DOMContentLoaded',function (event) {
+        if (document.cookie === '') {
+            console.log('asdfsd');
+            return;
+        } else  {
+            let name = getCookie('name');
+            let age = getCookie('age');
+            let city = getCookie('city');
+            for (let i = 0; i < checkboxArr.length; i++) {
+                checkboxArr[i].checked = (getCookie(`check__${i}`) === 'true');
+                console.log(checkboxArr[i]);
+            }
+            inputName.value = name;
+            inputAge.value = age;
+            inputCity.value = city;
+            console.log(checkboxArr);
+        }
+    });
+
+
+</script>
+</body>
+</html>
