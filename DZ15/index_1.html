@@ -42,39 +42,40 @@
     const inputCity = document.body.querySelector('input[name = "city"]');
     const checkboxArr = document.body.querySelectorAll('input[type = "checkbox"]');
 
-    function getCookie(name) {
-        let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-        ));
-        return matches ? decodeURIComponent(matches[1]) : undefined;
-    }
+
 
     document.body.querySelector('button').addEventListener('click', function (event) {
         event.preventDefault();
-        document.cookie = `name=${inputName.value};`;
-        document.cookie = `age=${inputAge.value};`;
-        document.cookie = `city=${inputCity.value};`;
-        document.cookie = `check__0=${checkboxArr[0].checked};`;
-        document.cookie = `check__1=${checkboxArr[1].checked};`;
-        document.cookie = `check__2=${checkboxArr[2].checked};`;
-        document.cookie = `check__3=${checkboxArr[3].checked};`;
-        console.log(document.cookie);
+        let tempObj =  {};
+        tempObj.name = inputName.value;
+        tempObj.age = inputAge.value;
+        tempObj.city = inputCity.value;
+        tempObj.checkboxArr = [];
+        tempObj.checkboxArr.push(checkboxArr[0].checked);
+        tempObj.checkboxArr.push(checkboxArr[1].checked);
+        tempObj.checkboxArr.push(checkboxArr[2].checked);
+        tempObj.checkboxArr.push(checkboxArr[3].checked);
+        localStorage.setItem('obj', JSON.stringify(tempObj));
+        localStorage.setItem('saved', 'true');
     });
 
 
 
     document.addEventListener('DOMContentLoaded',function (event) {
-        if (document.cookie === '') {
-            return;
-        } else  {
-            let name = getCookie('name');
-            let age = getCookie('age');
-            let city = getCookie('city');
-            for (let i = 0; i < checkboxArr.length; i++) {
-                checkboxArr[i].checked = (getCookie(`check__${i}`) === 'true');
+        if (localStorage.getItem('saved') === 'true'){
+            let obj = JSON.parse(localStorage.getItem('obj'));
+            inputName.value = obj.name;
+            inputAge.value = obj.age;
+            inputCity.value = obj.city;
+            for (let i = 0; i < checkboxArr.length; i++){
+                if (obj.checkboxArr[i]){
+                    checkboxArr[i].checked = true;
+                } else  {
+                    checkboxArr[i].checked = false;
+                }
             }
-            inputName.value = name;
-            inputAge.value = age;
-            inputCity.value = city;
+        }else {
+            return;
         }
     });
 
