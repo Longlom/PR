@@ -1,0 +1,19 @@
+{
+  "name": "Homework-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "keywords": [],
+  "author": "Long",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^1.30.1",
+    "ramda": "^0.27.0"
+  },
+  "devDependencies": {
+    "nodemon": "git+https://github.com/remy/nodemon.git"
+  }
+}

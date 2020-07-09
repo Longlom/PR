@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        iframe {
+            display: block;
+        }
+        button {
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<iframe src="iframe.html" frameborder="10" id="iframe"></iframe>
+<button>Кнопка</button>
+<div></div>
+<script>
+    document.body.querySelector('button').addEventListener('click', (e) => {
+        let doc = window.frames[0].document;
+        console.log(doc);
+
+        let num = prompt('Введите число');
+
+        let div = doc.body.querySelector('div');
+        div.innerText = `${num}`;
+        console.log(window.frames[0].parent);
+    });
+
+    window.onbeforeunload = function() {
+        return "Вы уверены?";
+    };
+</script>
+</body>
+</html>
